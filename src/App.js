@@ -7,7 +7,7 @@ const MainComponent = React.lazy(() => import("./MainComponent"));
 function App() {
   return (
     <div className={styles.container}>
-      <Suspense fallback={<Loading ms={0} />}>
+      <Suspense fallback={<Loading ms={1000} />}>
         <MainComponent />
       </Suspense>
     </div>
